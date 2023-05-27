@@ -1,7 +1,6 @@
 const fs = require( 'fs' );
 const SerpApi = require( 'google-search-results-nodejs' );
-const { start } = require( 'repl' );
-const search = new SerpApi.GoogleSearch( "7152fbabe15071361501ee4760256b3f6c65b5899c8d87d0c03bfedd403fddb5" );
+const search = new SerpApi.GoogleSearch( process.env.API_KEY );
 
 
 const params = {
